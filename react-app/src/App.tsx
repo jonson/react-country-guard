@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useCountry } from './CountryContext';
+import CountryGuard from './CountryGuard';
 
 
 function USA() {
@@ -28,6 +29,11 @@ function App() {
         ) : (
            <p>Loading country...</p>
         )}
+
+        <CountryGuard country='US'>
+          <p>You are in the USA</p>
+        </CountryGuard>
+        
       </header>
     </div>
   );
