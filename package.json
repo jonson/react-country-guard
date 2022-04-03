@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.11",
+    "create-react-app": "^5.0.0"
+  }
+}
